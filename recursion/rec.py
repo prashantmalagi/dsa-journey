@@ -13,7 +13,7 @@ def print_name(name,n,i):
     print_name(name, n, i + 1)
 print_name("pnm", 8, 0)
 
-"""
+
 class Solution(object):
     def fizzBuzz(self, n):
         ans = []
@@ -27,4 +27,7 @@ class Solution(object):
             else:
                 ans.append(str(i))
         return ans
-
+"""
+class Solution(object):
+    def countOdds(self, low, high):
+        return (high + 1)//2 - (low - 1)//2
