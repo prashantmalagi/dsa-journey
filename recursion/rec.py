@@ -27,7 +27,27 @@ class Solution(object):
             else:
                 ans.append(str(i))
         return ans
-"""
 class Solution(object):
     def countOdds(self, low, high):
         return (high + 1)//2 - (low - 1)//2
+
+class Solution(object):
+    def smallerNumbersThanCurrent(self, nums):
+        ans = []
+        for i in nums:
+            c = 0
+            for j in nums:
+                if j<i:
+                    c+=1
+            ans.append(c)
+        return ans
+n = int(input("enter n value:"))
+i = 0
+for i in range(n+1):
+    print(i+1,end=" ")
+"""
+def fact(n):
+    if n == 0:
+        return 1
+    return n * fact(n-1)
+print(fact(3))
